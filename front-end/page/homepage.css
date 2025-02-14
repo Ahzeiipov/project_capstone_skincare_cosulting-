@@ -117,7 +117,7 @@ body{
 }
 
 .card img {
-    width: 500px;
+    width: 400px;
     /* Adjust image size */
     height: auto;
 }
@@ -128,7 +128,7 @@ body{
 
 .card p {
     font-size: 16px;
-    margin: 0;
+    margin-right: 200px;
     /* Remove default margin to control spacing */
 }
 .products-container {
@@ -186,4 +186,46 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 100px 100px;
+
+}
+.footer-content ul li a{
+    text-decoration: none;
+    color: black;
+} 
+ul{
+    list-style-type: none;
+   
+}
+
+
+
+.socials {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Display items horizontally */
+    gap: 15px; /* Add space between items */
+}
+
+.socials-container {
+    text-align: center; /* Center align the title and logos */
+}
+
+.socials {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Display logos horizontally */
+    justify-content: center; /* Center logos horizontally */
+    gap: 15px; /* Add space between logos */
+}
+
+.socials a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+    font-size: 24px; /* Adjust icon size (optional) */
+}
+
+.socials a:hover {
+    color: #007bff; /* Change color on hover (optional) */
 }
