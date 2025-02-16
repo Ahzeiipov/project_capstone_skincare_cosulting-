@@ -8,12 +8,24 @@
     display: flex;
     gap: 20px;
 }
-.search-container{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+/* Style the form-group and textarea */
+.form-group {
+    max-width: 900px;  /* Limit the maximum width */
+    margin: 0 auto;    /* Center the form on the page */
+    padding: 20px;
+}
+
+textarea.form-control {
+    width: 100%;       /* Make the textarea take up full width */
+    padding: 15px;     /* Add some padding inside the textarea */
+    border: 1px solid #ccc; /* Add a border around the textarea */
+    font-size: 16px;    /* Make the text inside a bit larger */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-sizing: border-box; /* Ensure padding does not mess with width */
    
 }
-#search{
-    padding: 200px;
+textarea::placeholder {
+    text-align: center; /* Horizontal alignment */
+    vertical-align: middle; /* Vertical alignment */
+    line-height: 450px;
 }

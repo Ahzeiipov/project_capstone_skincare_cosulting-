@@ -1,0 +1,13 @@
+h3{
+    color: black;
+    margin: 0;
+    text-align: center;
+    margin-top: 100px;
+}
+.results-container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(87, 113, 135);
+    margin: 40px 150px 50px 150px;
+}
