@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    text-align: center; /* Center the text */
+}
+h1, h2 {
+    color: #333;
+}
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Center the container */
+    max-width: 600px; /* Optional: Limit width for better readability */
+}
+.checkmark {
+    color: rgb(41, 107, 193);
+}
+
+.container {
+    margin-top: 80px; /* Optional: Add some space at the top */
+}
