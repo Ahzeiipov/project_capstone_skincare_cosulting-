@@ -143,6 +143,22 @@
         <div id="footer"></div>
     </section>
     <script src="footer.js"></script>
+
+    <script>
+        // Simulated user login status and profile picture URL
+        const isLoggedIn = true; // Change this based on real authentication
+        const profilePicUrl = 'https://example.com/user-profile-pic.jpg'; // User's profile picture URL
+
+        window.onload = function () {
+            if (isLoggedIn) {
+                document.getElementById('loginButton').style.display = 'none';
+                const profilePic = document.getElementById('profilePic');
+                profilePic.src = profilePicUrl;
+                profilePic.style.display = 'inline-block';
+                document.getElementById('profileLink').style.display = 'inline-block';
+            }
+        };
+    </script>
 </body>
 
 </html>
