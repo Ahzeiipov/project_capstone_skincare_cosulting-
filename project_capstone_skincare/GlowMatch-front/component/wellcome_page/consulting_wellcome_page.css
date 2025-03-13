@@ -4,7 +4,8 @@
     align-items: center;
     height: 70vh; /* Full viewport height for better centering */
     padding: 20px; /* Add padding for smaller screens */
-    margin-top: 100px;
+    margin-top: 130px;
+    margin-bottom: 100px;
    
    
 }
@@ -14,7 +15,9 @@
     max-width: 1000px; /* Limit width for better readability */
     height: auto;
     padding: 40px ;
-    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #C1DFFF;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 

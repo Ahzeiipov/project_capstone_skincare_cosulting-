@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start; /* Align the items at the top */
-    padding: 100px 100px;
+    padding: 50px 100px;
     gap: 50px; /* Space between sections */
 }
 

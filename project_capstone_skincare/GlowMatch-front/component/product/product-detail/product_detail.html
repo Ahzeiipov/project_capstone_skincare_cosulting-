@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centella Cream</title>
+    <script src="product_detail.js"></script>
+    <link rel="stylesheet" href="product_detail.css">
+</head>
+
+<body>
+    <div class="product-container">
+        <div class="image-gallery">
+            <div class="main-image">
+                <img id="displayedImage"
+                    src="/project_capstone_skincare/GlowMatch-front/asset/image/card-image/card1.jpeg"
+                    alt="Centella Cream">
+            </div>
+
+            <div class="thumbnail-container">
+                <button class="nav-btn next" onclick="nextImage()">&#10095;</button>
+                <img class="thumbnail"
+                    src="/project_capstone_skincare/GlowMatch-front/asset/image/card-image/card1.jpeg"
+                    onclick="changeImage(this.src)">
+                <img class="thumbnail" src="/project_capstone_skincare/GlowMatch-front/asset/image/moisirizer/pink.jpeg"
+                    onclick="changeImage(this.src)">
+                <img class="thumbnail"
+                    src="/project_capstone_skincare/GlowMatch-front/asset/image/foam/Poremizing Deep Cleansing Foam.png"
+                    onclick="changeImage(this.src)">
+                <img class="thumbnail"
+                    src="/project_capstone_skincare/GlowMatch-front/asset/image/sunscreen/Skin1004 Madagascar Centella Air-Fit Suncream Plus SPF 50+ PA++++.png"
+                    onclick="changeImage(this.src)">
+                <button class="nav-btn prev" onclick="prevImage()">&#10094;</button>
+
+            </div>
+        </div>
+        <div class="product-details">
+            <h1>Centella Cream</h1>
+            <h3>Lightweight Moisturizing Cream</h3>
+            <p><strong>What It Is:</strong> A light cream with Panthenol and TECA soothes, moisturizes, and nourishes
+                the skin.</p>
+            <p><strong>Product Benefits:</strong> Calming, Hydrating</p>
+            <p><strong>Skin Type:</strong> Normal, Sensitive</p>
+            <p><strong>Key Ingredients:</strong> Centella Asiatica Extract, Panthenol, TECA (Madecassoside,
+                Asiaticoside, Madecassic Acid, Asiatic Acid)</p>
+            <hr>
+            <div class="tabs">
+                <button class="tab-button active" onclick="showTab('details')">Product details</button>
+                <button class="tab-button" onclick="showTab('texture')">Texture</button>
+            </div>
+            <div id="details" class="tab-content active">
+                <p><strong>Centella Cream</strong></p>
+                <ul>
+                    <li>Lightweight and effective moisture-sealing cream</li>
+                    <li>Calms the skin and forms a protective hydration layer</li>
+                    <li>Addition of TECA calms, moisturizes, and nourishes skin</li>
+                    <li>Oil-IN-WATER-GEL technology delivers deep hydration</li>
+                    <li>Certified brightening & anti-aging benefits</li>
+                </ul>
+            </div>
+            <div id="texture" class="tab-content">
+                <p>Information about the product's texture will go here.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
