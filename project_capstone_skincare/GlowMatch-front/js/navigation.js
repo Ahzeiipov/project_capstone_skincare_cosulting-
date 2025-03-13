@@ -1,26 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const consultLink = document.querySelector("a[href*='consulting.html']");
-    const analyzeLink = document.querySelector("a[href*='analysis.html']");
-    const loginPopup = document.querySelector(".container"); // Login form container
-    const flipCheckbox = document.querySelector("#flip"); // Checkbox for switching between login & signup
+    const menuItems = document.querySelectorAll(".menu li a"); // Select all menu links
+    const currentPage = window.location.pathname; // Get the current page URL
 
-    function isUserLoggedIn() {
-        return localStorage.getItem("loggedIn") === "true";
-    }
+    menuItems.forEach((item) => {
+        // Normalize both the URL path and the link path
+        const linkPath = new URL(item.href, window.location.origin).pathname;
 
-    function showLoginPopup() {
-        loginPopup.style.display = "block"; // Show login form
-        flipCheckbox.checked = false; // Reset to login view
-    }
-
-    function requireLogin(event) {
-        if (!isUserLoggedIn()) {
-            event.preventDefault(); // Prevent navigation
-            showLoginPopup(); // Show the login popup
+        if (currentPage === linkPath) {
+            item.parentElement.classList.add("active"); // Add 'active' class to the <li>
         }
-    }
-
-    // ✅ Attach event listeners ONLY if elements exist
-    if (consultLink) consultLink.addEventListener("click", requireLogin);
-    if (analyzeLink) analyzeLink.addEventListener("click", requireLogin);
+    });
 });

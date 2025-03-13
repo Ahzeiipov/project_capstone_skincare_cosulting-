@@ -51,7 +51,8 @@ nav .navbar .menu {
 }
 
 .navbar .menu li.active a {
-    color: #62aada; /* Color for the active link */
+    color: #62aada;
+    border-bottom: 3px solid #62aada;
     font-weight: 600; /* Make the active link bolder */
 }
 
