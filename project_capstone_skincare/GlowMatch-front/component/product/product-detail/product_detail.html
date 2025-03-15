@@ -4,45 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centella Cream</title>
     <script src="product_detail.js"></script>
+    <link rel="stylesheet" href="/project_capstone_skincare/GlowMatch-front/component/navigation/navigation.html">
+    <link rel="stylesheet" href="/project_capstone_skincare/GlowMatch-front/component/footer/footer.html">
+    <link rel="stylesheet" href="/project_capstone_skincare/GlowMatch-front/asset/global-style/product.css">
     <link rel="stylesheet" href="product_detail.css">
 </head>
 
 <body>
+    <div id="navigation-bar"></div>
     <div class="product-container">
         <div class="image-gallery">
             <div class="main-image">
                 <img id="displayedImage"
-                    src="/project_capstone_skincare/GlowMatch-front/asset/image/card-image/card1.jpeg"
+                    src="/project_capstone_skincare/GlowMatch-front/asset/image/moisirizer/pink/pink (3).png"
                     alt="Centella Cream">
             </div>
-
             <div class="thumbnail-container">
                 <button class="nav-btn next" onclick="nextImage()">&#10095;</button>
                 <img class="thumbnail"
-                    src="/project_capstone_skincare/GlowMatch-front/asset/image/card-image/card1.jpeg"
-                    onclick="changeImage(this.src)">
-                <img class="thumbnail" src="/project_capstone_skincare/GlowMatch-front/asset/image/moisirizer/pink.jpeg"
+                    src="/project_capstone_skincare/GlowMatch-front/asset/image/moisirizer/pink/pink (1).png"
                     onclick="changeImage(this.src)">
                 <img class="thumbnail"
-                    src="/project_capstone_skincare/GlowMatch-front/asset/image/foam/Poremizing Deep Cleansing Foam.png"
+                    src="/project_capstone_skincare/GlowMatch-front/asset/image/moisirizer/pink/pink (2).png"
                     onclick="changeImage(this.src)">
                 <img class="thumbnail"
-                    src="/project_capstone_skincare/GlowMatch-front/asset/image/sunscreen/Skin1004 Madagascar Centella Air-Fit Suncream Plus SPF 50+ PA++++.png"
+                    src="/project_capstone_skincare/GlowMatch-front/asset/image/moisirizer/pink/pink (3).png"
+                    onclick="changeImage(this.src)">
+                <img class="thumbnail"
+                    src="/project_capstone_skincare/GlowMatch-front/asset/image/moisirizer/pink/pink (1).png"
                     onclick="changeImage(this.src)">
                 <button class="nav-btn prev" onclick="prevImage()">&#10094;</button>
 
             </div>
         </div>
         <div class="product-details">
-            <h1>Centella Cream</h1>
-            <h3>Lightweight Moisturizing Cream</h3>
-            <p><strong>What It Is:</strong> A light cream with Panthenol and TECA soothes, moisturizes, and nourishes
+            <h1 style="margin-top: 0px; ">Centella Cream</h1>
+            <p style="margin-left: 2px;">Lightweight Moisturizing Cream</p>
+
+            <hr>
+
+            <strong>What It Is:</strong>
+            <p> A light cream with Panthenol and TECA soothes, moisturizes, and nourishes
                 the skin.</p>
-            <p><strong>Product Benefits:</strong> Calming, Hydrating</p>
-            <p><strong>Skin Type:</strong> Normal, Sensitive</p>
-            <p><strong>Key Ingredients:</strong> Centella Asiatica Extract, Panthenol, TECA (Madecassoside,
+            <strong>Product Benefits:</strong>
+          
+            <p> Calming, Hydrating</p>
+            <strong>Skin Type:</strong>
+            <p> Normal, Sensitive</p>
+            <strong>Key Ingredients:</strong> 
+            <p>Centella Asiatica Extract, Panthenol, TECA (Madecassoside,
                 Asiaticoside, Madecassic Acid, Asiatic Acid)</p>
             <hr>
             <div class="tabs">
@@ -50,7 +61,7 @@
                 <button class="tab-button" onclick="showTab('texture')">Texture</button>
             </div>
             <div id="details" class="tab-content active">
-                <p><strong>Centella Cream</strong></p>
+                <strong>Centella Cream</strong>
                 <ul>
                     <li>Lightweight and effective moisture-sealing cream</li>
                     <li>Calms the skin and forms a protective hydration layer</li>
@@ -60,10 +71,16 @@
                 </ul>
             </div>
             <div id="texture" class="tab-content">
-                <p>Information about the product's texture will go here.</p>
+                <img src="/project_capstone_skincare/GlowMatch-front/asset/image/texture/pink-texture.png" alt="">
             </div>
         </div>
     </div>
+    
+    <section>
+        <h3 style="margin: 40px; font-size: 30px;">Others</h3>
+        <div id="products-container-sunscreen"></div>
+    </section>
+    <div id="footer"></div>
 </body>
 
 </html>

@@ -31,6 +31,7 @@
     font-size: 14px; /* Adjust font size for the job title */
     color: #777; /* Lighter color for the text */
     margin: 0;
+    
 }
 
 .card {
@@ -55,4 +56,8 @@
 
 .card.reverse {
     flex-direction: row-reverse; /* Text first, then image */
+}
+.product-link {
+    text-decoration: none;
+    color: inherit;
 }
